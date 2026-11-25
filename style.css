@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(239, 220, 223);
+    color: #181818;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-bar {
+    background-color: #161616;
+    color: #dcdcdc;
+    font-size: 12px;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    max-width: 1000px;
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: #181818;
+}
+
+nav a {
+    margin-left: 20px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #555555;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+.hero {
+    max-width: 540px;
+    margin: 30px auto 60px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.square-box {
+   width: 320px;
+    aspect-ratio: 4 / 5;
+    border-radius: 160px 160px 24px 24px; /* arch top */
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.timetable-section {
+    padding: 48px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.top-cta {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 36px;
+}
+
+.button-pill {
+    display: inline-block;
+    background-color: rgb(236, 225, 236);
+    color: #1f1b24;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 999px;
+}
+
+.button-pill:hover {
+    background-color: #68548a;
+    color: #ffffff;
+}
+
+.timetable-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.class-card {
+    background-color: antiquewhite;
+    border: 1px solid #e6e3ec;
+    border-radius: 10px;
+    padding: 24px 20px;
+    min-height: 170px;
+}
+
+.class-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #2c2833;
+    margin-bottom: 8px;
+}
+
+.class-meta {
+    font-size: 0.85rem;
+    color: #7c7688;
+}
+
+@media (max-width: 900px) {
+    .timetable-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .timetable-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.teachers-section {
+    background-color: #f6f4f8;
+    padding: 64px 20px;
+}
+
+.teachers-layout {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.photo-placeholder {
+    width: 300px;
+    aspect-ratio: 4 / 3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.teachers-text {
+    flex: 1;
+}
+
+.teachers-text h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #26232c;
+    margin-bottom: 14px;
+}
+
+.teachers-text p {
+    font-size: 0.95rem;
+    color: #6b6476;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.cta-banner {
+    background-color: #1f1b24;
+    color: #ffffff;
+    text-align: center;
+    padding: 72px 20px;
+}
+
+.cta-banner h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.cta-banner p {
+    font-size: 0.95rem;
+    color: #b8b1c2;
+    margin-bottom: 28px;
+}
+
+.btn-light {
+    display: inline-block;
+    background-color: #f3eff7;
+    color: #1f1b24;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 999px;
+}
+
+.btn-light:hover {
+    background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .teachers-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .photo-placeholder {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .teachers-text p {
+        margin: auto;
+    }
+}
+
